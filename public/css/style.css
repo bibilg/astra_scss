@@ -175,7 +175,7 @@ header {
   height: 100%;
 }
 
-footer {
+.footer {
   color: white;
   display: flex;
   flex-direction: row;
@@ -186,31 +186,31 @@ footer {
   font-family: "Courier New", Courier, monospace;
 }
 @media (max-width: 1308px) and (min-width: 768px) {
-  footer {
+  .footer {
     font-size: 100%;
   }
 }
 @media (max-width: 767px) {
-  footer {
+  .footer {
     font-size: 70%;
   }
 }
 @media (max-width: 425px) {
-  footer {
+  .footer {
     font-size: 30%;
   }
 }
-footer a {
+.footer a {
   text-decoration: underline;
   color: white;
 }
-footer a:hover {
+.footer a:hover {
   font-size: 125%;
 }
-footer p {
+.footer__source {
   padding: 0 2%;
 }
-footer p:nth-child(1), footer p:nth-child(2) {
+.footer__source:nth-child(1), .footer__source:nth-child(2) {
   border-right: 1px solid white;
 }
 

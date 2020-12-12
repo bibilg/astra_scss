@@ -177,7 +177,7 @@ header{
     }
 }
 
-footer{
+.footer{
     color: white;
     display: flex;
     flex-direction: row;
@@ -205,9 +205,9 @@ footer{
         }
     }
 
-    p{
+    &__source{
         padding: 0 2%;
-        
+
         &:nth-child(1), &:nth-child(2){
             border-right: 1px solid white;
         }
