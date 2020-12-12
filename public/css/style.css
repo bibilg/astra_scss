@@ -1,4 +1,5 @@
 /* Mixin, normally in another file*/
+/* CSS */
 *, ::after, ::before {
   box-sizing: border-box;
   margin: 0;
@@ -13,6 +14,16 @@ header {
   display: flex;
   justify-content: center;
   padding: 3% 8.5% 0 8.5%;
+}
+@media (max-width: 767px) {
+  header {
+    padding-top: 20%;
+  }
+}
+@media (max-width: 425px) {
+  header {
+    padding-top: 40%;
+  }
 }
 
 .navigation {
@@ -31,6 +42,21 @@ header {
   margin: 20px;
   opacity: 0.33;
 }
+@media (max-width: 1308px) and (min-width: 768px) {
+  .navigation__icone i {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .navigation__icone i {
+    font-size: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .navigation__icone i {
+    font-size: 10px;
+  }
+}
 .navigation__icone i:hover {
   opacity: 1;
 }
@@ -46,6 +72,20 @@ header {
   border-bottom: 30px solid white;
   border-left: 30px solid transparent;
 }
+@media (max-width: 1308px) and (min-width: 768px) {
+  .navigation__triangle {
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid white;
+    border-left: 20px solid transparent;
+  }
+}
+@media (max-width: 425px) {
+  .navigation__triangle {
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    border-left: 10px solid transparent;
+  }
+}
 .navigation__triangle--hidden {
   opacity: 0;
 }
@@ -56,11 +96,44 @@ header {
   opacity: 0;
   /* To make dissapear ; display : none make everything move */
 }
+@media (max-width: 1308px) and (min-width: 768px) {
+  .navigation__information {
+    font-size: 70%;
+    padding: 15% 20%;
+  }
+}
+@media (max-width: 767px) {
+  .navigation__information {
+    font-size: 50%;
+    padding: 15% 15%;
+  }
+}
+@media (max-width: 425px) {
+  .navigation__information {
+    font-size: 30%;
+    padding: 15% 15%;
+  }
+}
 
 .main {
   margin: 0 20% 0 20%;
   background-color: white;
   display: flex;
+}
+@media (max-width: 1308px) and (min-width: 768px) {
+  .main {
+    margin: 0 15% 0 15%;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    margin: 0 10% 0 10%;
+  }
+}
+@media (max-width: 425px) {
+  .main {
+    margin: 0 10% 0 10%;
+  }
 }
 .main__left {
   width: 60%;
@@ -70,6 +143,21 @@ header {
   flex-direction: column;
   justify-content: center;
   margin-left: 5%;
+}
+@media (max-width: 1308px) and (min-width: 768px) {
+  .main__left {
+    font-size: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .main__left {
+    font-size: 70%;
+  }
+}
+@media (max-width: 425px) {
+  .main__left {
+    font-size: 30%;
+  }
 }
 .main__left h1 {
   margin: 2% 0;
@@ -96,6 +184,21 @@ footer {
   font-size: 125%;
   opacity: 0.6;
   font-family: "Courier New", Courier, monospace;
+}
+@media (max-width: 1308px) and (min-width: 768px) {
+  footer {
+    font-size: 100%;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    font-size: 70%;
+  }
+}
+@media (max-width: 425px) {
+  footer {
+    font-size: 30%;
+  }
 }
 footer a {
   text-decoration: underline;
