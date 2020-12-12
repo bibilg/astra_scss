@@ -7,7 +7,7 @@
     <meta name="robot" content="index,follow" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--Force les navigateurs à utiliser la largeur réelle de l'appareil-->
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" /> <!-- Pour utiliser fontawesome-->
     <title>Astra</title>
 </head>
@@ -17,28 +17,28 @@
     <header>
         <div class="navigation">
             <div class="navigation__triangle"></div> 
-            <a href=#><i class="fas fa-home"></i></a>
+            <a class="navigation__icone" href=#><i class="fas fa-home"></i></a>
             <div class="navigation__information">
                 <p>Home</p>
             </div>
         </div>
         <div class="navigation">
             <div class="navigation__triangle navigation__triangle--hidden"></div>
-            <a href=#><i class="far fa-folder"></i></a>
+            <a class="navigation__icone" href=#><i class="far fa-folder"></i></a>
             <div class="navigation__information">
                 <p>Work</p>
             </div>
         </div>
         <div class="navigation">
             <div class="navigation__triangle navigation__triangle--hidden"></div>
-            <a href=#><i class="far fa-envelope"></i></a>
+            <a class="navigation__icone" href=#><i class="far fa-envelope"></i></a>
             <div class="navigation__information">
                 <p>Contact</p>
             </div>
         </div>
         <div class="navigation">
             <div class="navigation__triangle navigation__triangle--hidden"></div>
-            <a href=#><i class="fab fa-twitter"></i></a>
+            <a class="navigation__icone" href=#><i class="fab fa-twitter"></i></a>
             <div class="navigation__information">
                 <p>Twitter</p>
             </div>
@@ -46,15 +46,14 @@
         
     </header>
 
-    <main>
-        <div class="main_left">
+    <main class="main">
+        <div class="main__left">
             <h1>Bryan LEGRAS</h1>
             <p>Junior developer</p>
         </div>
-        <div class="main_right">
+        <div class="main__right">
             <img  src="coffee.jpg" alt="Coffee image" />
-        </div>
-        
+        </div>  
     </main>
 
     <footer>
